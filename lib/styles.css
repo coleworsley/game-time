@@ -1,7 +1,11 @@
 body {
+  background-color: #323232;
   text-align: center;
 }
 
 canvas {
-  border: 1px dashed red;
+  background-color: #191919;
+  border-style: inset;
+  border-color: #666666;
+  border-width: 2px;
 }
