@@ -1,7 +1,26 @@
 body {
+  display: flex;
+  justify-content: center;
+  background-color: #323232;
   text-align: center;
 }
 
-canvas {
-  border: 1px dashed red;
+#game {
+  background-color: #191919;
+  border-style: inset;
+  border-color: #666666;
+  border-width: 2px;
+  margin-right: 20px;
+}
+
+.game-info {
+  background-color: #666666;
+  border-style: outset;
+  border-color: #F7F7F6;
+  border-width: 1px;
+}
+
+.logo {
+  width: 300px;
+  margin: 0 20px;
 }
