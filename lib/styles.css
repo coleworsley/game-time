@@ -26,11 +26,11 @@ body {
   margin: 0 20px;
 }
 
-.dashHeading {
+.dash-heading {
   margin-bottom: 5px;
 }
 
-.dashNumber {
+.dash-number {
   margin: 0;
   color: rgb(223, 0, 120);
   font-size: 80px;

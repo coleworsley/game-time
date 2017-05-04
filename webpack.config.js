@@ -17,5 +17,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.json', '.css']
+  },
+  devServer: {
+    inline: true, // remove the webpack iframe
+    stats: 'errors-only', // remove all of the 'built' messages
   }
 };
