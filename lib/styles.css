@@ -3,24 +3,35 @@ body {
   justify-content: center;
   background-color: #323232;
   text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 #game {
-  background-color: #191919;
-  border-style: inset;
   border-color: #666666;
+  border-style: inset;
   border-width: 2px;
   margin-right: 20px;
+  background-color: #191919;
 }
 
 .game-info {
-  background-color: #666666;
-  border-style: outset;
   border-color: #F7F7F6;
+  border-style: outset;
   border-width: 1px;
+  background-color: #666666;
 }
 
 .logo {
   width: 300px;
   margin: 0 20px;
+}
+
+.dashHeading {
+  margin-bottom: 5px;
+}
+
+.dashNumber {
+  margin-top: 0;
+  color: rgb(223, 0, 120);
+  font-size: 80px;
 }
