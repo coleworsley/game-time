@@ -1,3 +1,21 @@
+# Game Time -- Breakout
+
+A browser-playable version of Breakout using *Mocha* test-driven development.  Built off the *Game Time Starter Kit*.  This version is full-featured and playable, including *game over*, *levels of difficulty*, *live scoring*, and *high score*.
+
+## Usage
+
+Keyboard Controls
+* `space bar` to start or pause game
+* `left arrow` to move paddle to the left
+* `right arrow` to move paddle to the right
+
+## Authors
+
+* **Lindsay Parker**
+* **Cole Worsley**
+
+---
+
 # Game Time Starter Kit (FE - Module 2)
 
 Basic Game Time starter kit.
