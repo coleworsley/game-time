@@ -1,6 +1,8 @@
 
 import { expect, assert } from 'chai';
 import Ball from '../lib/Ball.js';
+import Brick from '../lib/Brick.js';
+import Paddle from '../lib/Paddle.js';
 
 describe ('Ball Test', () => {
   const ball = new Ball( 10, 200, 5 );
@@ -67,5 +69,25 @@ describe ('Ball Test', () => {
     ball.reboundTop();
     expect(ball.yv).to.equal(5);
     expect(ball.y).to.equal(9);
+  });
+
+  it('should detect collisions with other objects', () => {
+    const brick = new Brick( 0, 0, 10, 10, 'red', 1);
+    const ball = new Ball( 5, 15, 5 );
+
+    expect(ball.collision(canvas, brick)).to.deep.equal({ collision: true,
+      x: false,
+      y: true });
+
+
+    const paddle = new Paddle(40, 40, 20, 10)
+    
+    ball.x = 50;
+    ball.y = 36;
+    ball.yv = 5;
+
+    expect(ball.collision(canvas, paddle)).to.deep.equal({ collision: true,
+      x: false,
+      y: true });
   });
 });
